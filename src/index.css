@@ -1,0 +1,29 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React Big Calendar Styles */
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+@import 'react-datepicker/dist/react-datepicker.css';
+
+/* Optional: Basic overrides for better looks with Tailwind */
+.rbc-calendar {
+  font-family: 'Inter', sans-serif; /* Or your preferred font */
+}
+.rbc-event {
+  background-color: #3b82f6; /* Blue-600 */
+  color: white;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.875rem; /* sm */
+}
+.rbc-today {
+  background-color: #eff6ff; /* Blue-50 */
+}
+.rbc-event-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
